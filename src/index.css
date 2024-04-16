@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FDF5E6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  text-align: center;
+  color: #7B3F00;
+  font-family: Arial;
+  margin-top: 50px;
+}
+
+p{
+  text-align: center;
+  color: #7B3F00;
+}
+
+button{
+  background-color: #FFC0CB;
+  color: #7B3F00;
+  border-radius: 4px;
+  border-color: #D2691E;
+}
+
+input{
+  color: #D2691E;
+  background-color: #FFC0CB;
+  border-radius: 4px;
+  border-color: #D2691E;
+  border-color: #D2691E;
+}
+
+select{
+  color: #D2691E;
+  background-color: #FFC0CB;
+  border-radius: 4px;
+}
+
+.contained {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #D2691E;
+
+}
+
+.todoo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #D2691E;
+}
+
+.striker{
+  text-decoration: line-through;
+}
+
+.Tresh{
+    width: 50px;
+    height: 30px;
+    border-color: #D2691E;
+    padding: 5px;
+}
+.Czech{
+  width: 50px;
+  height: 30px;
+  border-color: #D2691E;
 }
