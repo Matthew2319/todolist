@@ -24,7 +24,7 @@ function handleChe(id){
   setItems((items) => items.map((item) => item.id === id ? {...item, isChecked: !item.isChecked } : item ));
 } 
 function handleClearLi(){
-  const confirmed = window.confirm("yoo");
+  const confirmed = window.confirm("You went to the cashier for check out right?...");
   if(confirmed){
     setItems([]);
   } 
@@ -49,7 +49,7 @@ function handleClearLi(){
         </select>
       </div>
     <Itemlist items={sortedItems} onDeleteItem={handleDel} onCheckItem={handleChe}/>
-      <Footer items={items}/>
+      <Footer items={sortedItems}/>
     </div>
   )
 }

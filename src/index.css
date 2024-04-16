@@ -13,11 +13,10 @@ code {
     monospace;
 }
 
-.sort{
+.selection{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
   color: #D2691E;
 }
 
@@ -52,6 +51,9 @@ select{
   color: #D2691E;
   background-color: #FFC0CB;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  border-color: #D2691E;  
 }
 
 .contained {
@@ -60,7 +62,7 @@ select{
   align-items: center;
   height: 100px;
   color: #D2691E;
-
+  border-radius: 4px;
 }
 
 .todoo{
