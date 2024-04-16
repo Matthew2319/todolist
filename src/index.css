@@ -13,6 +13,14 @@ code {
     monospace;
 }
 
+.sort{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #D2691E;
+}
+
 h1{
   text-align: center;
   color: #7B3F00;

@@ -10,10 +10,9 @@ function App() {
 
   const [sortBy, setSortBy] = useState("name");
   let sortedItems;
-  if (sortBy === "input") sortedItems = items;
-  if (sortBy === "name")
-    sortedItems  = items.slice().sort((a, b) => a.name.localeCompare(b.name));
-  if (sortBy === "checked") items.slice().sort((a, b) => Number(b.number));
+  if(sortBy === "input") sortedItems = items;
+  if (sortBy === "name") sortedItems = items.slice().sort((a,b) => a.name.localeCompare(b.name));
+  if(sortBy === "checked") sortedItems = items.slice().sort((a,b) => Number(a.isChecked) - Number(b.isChecked));
   
   function handleAddItems(item){
     setItems(items => [...items, item])
@@ -35,13 +34,13 @@ function handleClearLi(){
     <div>
     <Header />
     <Form onAddItem={handleAddItems} />
-    <Itemlist items={items} onDeleteItem={handleDel} onCheckItem={handleChe}/>
-     <button onClick={handleClearLi}>Clear</button>
-      <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+    <button onClick={handleClearLi}>Clear</button>
+      <select className="sort" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
         <option value="input">Input</option>
         <option value="Name">Name</option>
         <option value="checked">Status order</option>
       </select>
+    <Itemlist items={items} onDeleteItem={handleDel} onCheckItem={handleChe}/>
       <Footer items={items}/>
     </div>
   )
